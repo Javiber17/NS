@@ -1,4 +1,4 @@
-import { charmander } from'./bases/03-Classes';
+import { charmander } from'./bases/04-injections';
       
 
 //import { bulbasaur, pokemons } from './bases/02-objets';

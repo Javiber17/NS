@@ -1,4 +1,6 @@
 import axios from "axios";
+import { PokeapiResponse } from "../interfaces/pokeapi-response-interface";
+
 
 export class Pokemons {
     //public readonly id: number;
@@ -19,8 +21,8 @@ export class Pokemons {
     speak() {
         console.log(`${this.name},${this.name}`);}
     
-    async getMoves() {
-        const {data} = await axios.get('https://pokeapi.co/api/v2/pokemon/4');
+    async getMoves() { 
+        const {data} = await axios.get<PokeapiResponse>  ('https://pokeapi.co/api/v2/pokemon/4');
         console.log(data.moves);
 
         return data.moves;
