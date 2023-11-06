@@ -19,8 +19,9 @@ export class Pokemon {
         console.log(`${this.name.toUpperCase()}!!!`);
     }
 
+
     speak() {
-        console.log(`${this.name}, ${this.name}`);
+        console.log(`${this.name}, ${this.name}!`);
     }
 
     async getMoves(): Promise<Move[]> {
